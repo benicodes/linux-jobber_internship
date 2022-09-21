@@ -1,9 +1,9 @@
 import React, { Component, createRef } from 'react';
 import { Data } from '../../static/dataInput';
 import './scrumboard.css';
+import Tasks from '../tasks/Tasks';
 
 export class Scrumboard extends Component {
-  ref = createRef(null);
 
   constructor() {
     super();
@@ -12,24 +12,6 @@ export class Scrumboard extends Component {
       isOpen: false,
       tasks: null
     }
-  }
-
-  outsideClick = ({target}) => {
-    if (target == this.ref.current) {
-      console.log('click outside class component')
-      // this.closeModal();
-    } else if (this.ref.current.contains(!target)) {
-      console.log('click inside class component')
-      this.closeModal();
-    }
-  }
-
-  componentDidMount() {
-    document.addEventListener('mousedown', this.outsideClick);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('mousedown', this.outsideClick);
   }
 
   openModal = () => {
@@ -69,19 +51,9 @@ export class Scrumboard extends Component {
             <p>Project Name: {Data.projectname}</p>
           </div>
         </nav>
-        <div className="scrumboard_contents" onClick={this.outsideClick}>
+        <div className="scrumboard_contents">
           <p className='welcome_msg' id='info'>Hello {Data.fullname} Welcome to your Scrumboard</p>
-
-          <div className="container">
-            <div className="weekly box">
-              <h3>Weekly Tasks</h3>
-              <p id="box">{this.state.tasks}</p>
-            </div>
-            <div className="daily box">
-              <h3>Daily Tasks</h3>
-            </div>
-          </div>
-
+          <Tasks />
           <div id="modal" ref={this.ref} className={this.state.isOpen ? 'show' : 'hidden'}>
             <div className="modal_header">
               <h3>Add a new task</h3>
