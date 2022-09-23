@@ -1,0 +1,24 @@
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.main {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20rem;
+    width: 30%;
+    background-color: var(--mainColor);
+    color: var(--black);
+    box-shadow: 6px 5px 10px gray;
+}
+
+.main h4{
+    background-color: var(--ash1);
+    text-align: center;
+    padding: 2.5%;
+}
