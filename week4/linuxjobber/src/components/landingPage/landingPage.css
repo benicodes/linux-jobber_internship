@@ -1,0 +1,239 @@
+.landing {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    height: calc(100vh - 65px);
+    color: black;
+}
+
+.contents {
+    display: flex;
+    height: 100%;
+    height: 100%;
+}
+
+.left__nav {
+    flex: 0.6;
+    height: 100%;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.imageContainer {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F3FD;
+    border-radius: 20px;
+    position: relative;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+}
+
+.imageContainer .uploadImage {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #800165 100%, #D3014E 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userName {
+    font-size: 1.1rem;
+    color: #30302E;
+    margin-top: 15%;
+}
+
+.links__container {
+    width: 100%;
+    padding-top: 25%;
+}
+
+.links__btn {
+    border: 0;
+    outline: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0;
+    cursor: pointer;
+    background-color: inherit;
+    margin-bottom: 4%;
+}
+
+.links__btn .left__icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F3FD;
+    border-radius: 8px;
+}
+
+.links__btn span {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.logout__btn {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* color: #e5e5e51c; */
+}
+
+.logout__btn span {
+    color: #30302E;
+}
+
+
+
+
+/* ======== form stylings ========== */
+.form__box {
+    flex: 3;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.form__box .form__1 {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    height: 60vh;
+    position: relative;
+    box-shadow: 1px 1px 0px 3px rgba(238, 238, 238, 0.75);
+    /* -webkit-box-shadow: 2px 2px 4px 5px rgba(238, 238, 238, 0.75);
+    -moz-box-shadow: 2px 2px 4px 5px rgba(238, 238, 238, 0.75); */
+    border-radius: 10px;
+}
+
+.form__wrapper {
+    padding: 8% 0;
+}
+
+.form__control {
+    margin-bottom: 3%;
+}
+
+.splitt {
+    padding-bottom: 1%;
+}
+
+.splitt span {
+    font-size: 14px;
+    margin-left: 8%;
+    color: rgb(128, 1, 101);
+    color: linear-gradient(180deg, rgba(128, 1, 101, 1) 53%, rgba(187, 43, 96, 1) 70%);
+}
+
+.splitt label {
+    color: #30302E;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+.form__control input {
+    display: block;
+    background-color: #F1F3FD;
+    color: #C5CCEC;
+    margin-left: 15%;
+    width: 70%;
+    padding: .6rem 1.6rem;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+
+
+
+.wrapper {
+    display: inline-flex;
+    margin-left: 15%;
+}
+
+.wrapper .option {
+    background: #F1F3FD;
+    color: #002851;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.wrapper .option span {
+    font-size: 12px;
+    color: #002851;
+
+}
+
+/* #option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span {
+    color: red;
+} */
+
+/* #option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+} */
+
+
+
+
+
+
+
+
+
+
+.form__btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: rgb(128, 1, 101);
+    background: linear-gradient(180deg, rgba(128, 1, 101, 1) 53%, rgba(187, 43, 96, 1) 70%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+.is__empty {
+    flex: .2;
+}

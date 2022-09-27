@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9%27');
+
+
+/* font-family: 'Helvetica Neue', sans-serif;
+font-family: 'Helvetica 25 UltraLight', sans-serif;
+font-family: 'Helvetica 35 Thin', sans-serif;
+font-family: 'Helvetica 45 Light', sans-serif;
+font-family: 'Helvetica 55 Roman', sans-serif;
+font-family: 'Helvetica 65 Medium', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +42,7 @@
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.7;
   color: var(--color-white);
   background-color: var(--color-white);
@@ -40,10 +50,14 @@ body {
   height: 100%;
 }
 
+.app {
+  position: relative;
+}
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
+
 
 section {
   padding: 6rem 0;

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
-import icon from '../../assets/images/icon.png';
+import { FaChevronRight  } from 'react-icons/fa';
 import './header.css';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
             <p className='header__heading'>Classroom Profile</p>
             <button className='header__btn'>
                 <span>Go to Classrom</span>
-                <img src={icon} className='icon_img' />
+                <FaChevronRight className='icon_img' />
             </button>
         </nav>
     </div>
