@@ -8,6 +8,8 @@ const LandingPage = () => {
     <div className='landing'>
       <div className="container">
         <div className="contents">
+
+          {/* left navbar */}
           <div className="left__nav">
             <div className='imageContainer'>
               <img src={profilePic} alt="profile image" />
@@ -46,12 +48,12 @@ const LandingPage = () => {
               </button>
             </div>
             <button className="logout__btn">
-              <FaArrowAltCircleRight />
+              <FaArrowAltCircleRight style={{ color: '#ACB7EB'}} />
               <span>Logout</span>
             </button>
           </div>
 
-
+          {/* form section */}
           <div className="form__box">
             <form className='form__1' action="">
               <div className='form__wrapper'>
